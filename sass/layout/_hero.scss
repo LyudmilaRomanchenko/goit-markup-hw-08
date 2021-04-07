@@ -1,6 +1,7 @@
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  /*наверное по умолчанию стоит именно так*/
+  /*padding-top: 118px;
+  padding-bottom: 118px;*/
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -8,22 +9,58 @@
     url(../img/main/bcg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 1600px;
+  /*max-width: 1600px;*/
   margin: 0 auto;
+
+  @media screen and (min-width: 480px) {
+    & {
+      padding-top: 118px;
+      padding-bottom: 118px;
+      max-width: 480px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    & {
+      padding-top: 118px;
+      padding-bottom: 118px;
+      max-width: 768px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    & {
+      padding-top: 200px;
+      padding-bottom: 200px;
+      max-width: 1600px;
+    }
+  }
 }
 
 .hero-container__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
-
-  width: 696px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    & {
+      font-size: 26px;
+      line-height: 1.62;
+      width: 360px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    & {
+      font-size: 44px;
+      line-height: 1.36;
+      width: 696px;
+    }
+  }
 }
 
 .hero-container__btn {
