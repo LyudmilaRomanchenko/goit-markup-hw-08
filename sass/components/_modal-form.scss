@@ -5,7 +5,7 @@
 
 .modal-form-element {
   position: relative;
-  /* margin-bottom: 10px;*/
+  margin-bottom: 5px;
 }
 
 .modal-form-element__lable,
@@ -33,7 +33,7 @@
   border-radius: 4px;
   outline: none;
 
-  margin-top: 4px;
+  margin-top: 3px;
 
   &:focus {
     border: 1px solid #2196f3;
@@ -44,7 +44,7 @@
 
 .modal-form-element__icon {
   position: absolute;
-  top: 39px;
+  top: 38px;
   /*transform: translateY(-50%);*/
   left: 15px;
   width: 18px;
@@ -97,12 +97,12 @@
 
 .modal-form-policy__label {
   font-family: inherit;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   margin: 0;
-  padding-left: 24px;
+  /*padding-left: 24px;*/
   cursor: pointer;
 
   display: flex;
