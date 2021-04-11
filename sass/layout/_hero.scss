@@ -1,23 +1,28 @@
 .hero {
-  /*наверное по умолчанию стоит именно так*/
-  /*padding-top: 118px;
-  padding-bottom: 118px;*/
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
-    ),
-    url(../img/main/bcg.jpg);
+    );
   background-repeat: no-repeat;
   background-size: cover;
-  /*max-width: 1600px;*/
   margin: 0 auto;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     & {
       padding-top: 118px;
       padding-bottom: 118px;
       max-width: 480px;
+      background-image: url(../img/main/hero/hero-mobile.jpg);
     }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      & {
+        background-image: url(../img/main/hero/hero-mobile@2x.jpg);
+      }
+    }
+
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -25,6 +30,15 @@
       padding-top: 118px;
       padding-bottom: 118px;
       max-width: 768px;
+      background-image: url(../img/main/hero/hero-tablet.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      & {
+        background-image: url(../img/main/hero/hero-tablet@2x.jpg);
+      }
     }
   }
 
@@ -33,6 +47,15 @@
       padding-top: 200px;
       padding-bottom: 200px;
       max-width: 1600px;
+      background-image: url(../img/main/hero/hero.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      & {
+        background-image: url(../img/main/hero/hero@2x.jpg);
+      }
     }
   }
 }
@@ -46,7 +69,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     & {
       font-size: 26px;
       line-height: 1.62;

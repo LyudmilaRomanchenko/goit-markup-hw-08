@@ -32,6 +32,12 @@
 
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: var(--elements-gap);
+    }
+  }
+
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     & {
       flex-basis: calc(100% / 2 - var(--elements-gap));

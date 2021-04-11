@@ -1,11 +1,11 @@
 .nav-list_active {
   color: var(--accent-color);
 
-  &::after {
+  &::before {
     position: absolute;
     left: 0;
     bottom: 0;
-    margin-bottom: -30px;
+    margin-bottom: -29px;
     content: '';
     background-color: var(--accent-color);
     width: 100%;
