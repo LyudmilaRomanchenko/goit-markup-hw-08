@@ -493,7 +493,7 @@ img {
   color: var(--accent-color);
 }
 
-.nav-list_active::before {
+.nav-list_active::after {
   position: absolute;
   left: 0;
   bottom: 0;

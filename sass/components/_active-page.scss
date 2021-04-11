@@ -1,7 +1,7 @@
 .nav-list_active {
   color: var(--accent-color);
 
-  &::before {
+  &::after {
     position: absolute;
     left: 0;
     bottom: 0;
