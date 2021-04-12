@@ -2,15 +2,17 @@
   background-color: var(--background-gray-color);
 }
 
-.team-list {
-  margin-top: var(--elements-gap);
+.section-title {
+  margin-bottom: var(--elements-gap);
+}
 
+.team-list {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     & {
       display: flex;
       flex-wrap: wrap;
       margin-left: calc(-1 * var(--elements-gap));
-      margin-bottom: calc(-1 * var(--elements-gap));
+      margin-top: calc(-1 * var(--elements-gap));
     }
   }
 
@@ -38,7 +40,7 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     & {
       margin-left: var(--elements-gap);
-      margin-bottom: var(--elements-gap);
+      margin-top: var(--elements-gap);
       flex-basis: calc(100% / 2 - var(--elements-gap));
     }
   }

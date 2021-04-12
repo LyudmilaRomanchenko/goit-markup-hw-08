@@ -33,7 +33,7 @@
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      padding-bottom: 60px;
+      margin-bottom: 60px;
     }
   }
 }
@@ -41,7 +41,7 @@
 .footer-contacts {
   @media screen and (max-width: 767px) {
     & {
-      padding-bottom: 60px;
+      margin-bottom: 60px;
     }
   }
 }
@@ -65,7 +65,7 @@
 .footer-join {
   @media screen and (max-width: 767px) {
     & {
-      padding-bottom: 60px;
+      margin-bottom: 60px;
     }
   }
 

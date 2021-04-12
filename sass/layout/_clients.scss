@@ -4,9 +4,9 @@
   @media screen and (max-width: 1199px) {
     & {
       flex-wrap: wrap;
-      margin-top: var(--elements-gap);
+      //margin-top: var(--elements-gap);
       margin-left: calc(-1 * var(--elements-gap));
-      margin-bottom: calc(-1 * var(--elements-gap));
+      margin-top: calc(-1 * var(--elements-gap));
     }
   }
 
@@ -22,7 +22,7 @@
     & {
       flex-basis: calc(100% / 2 - var(--elements-gap));
       margin-left: var(--elements-gap);
-      margin-bottom: var(--elements-gap);
+      margin-top: var(--elements-gap);
     }
   }
 
@@ -30,7 +30,7 @@
     & {
       flex-basis: calc(100% / 3 - var(--elements-gap));
       margin-left: var(--elements-gap);
-      margin-bottom: var(--elements-gap);
+      margin-top: var(--elements-gap);
     }
   }
 
@@ -103,6 +103,6 @@
 }
 
 .logo6 {
-  width: 188px;
+  width: 88px;
   height: 46px;
 }

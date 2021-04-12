@@ -3,9 +3,17 @@
   margin-right: auto;
   padding: 0 15px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 479px) {
+    & {
+    width: 100%;
+    margin: 0 auto;
+    }
+  }
+
+  @media screen and (min-width: 480px) {
     & {
       max-width: 480px;
+      margin: 0 auto;
     }
   }
 
