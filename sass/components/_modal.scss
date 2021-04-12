@@ -1,5 +1,7 @@
 .modal {
   position: absolute;
+  width: 450px;
+  height: 609px;
   top: 50%;
   left: 50%;
   padding: 40px;
@@ -18,7 +20,12 @@
 
   background-color: var(--primary-white-color);
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 480px) {
+    width: 90vw;
+    height: 80vh;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     & {
       width: 450px;
       height: 609px;

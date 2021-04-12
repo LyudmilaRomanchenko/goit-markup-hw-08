@@ -422,6 +422,13 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 480px) {
+  .mobile-menu {
+    width: 90vw;
+    height: 80vh;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
@@ -743,6 +750,8 @@ img {
 
 .modal {
   position: absolute;
+  width: 450px;
+  height: 609px;
   top: 50%;
   left: 50%;
   padding: 40px;
@@ -757,7 +766,14 @@ img {
   transform: translate(-50%, -50%) scale(0.8);
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 480px) {
+  .modal {
+    width: 90vw;
+    height: 80vh;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .modal {
     width: 450px;
     height: 609px;
